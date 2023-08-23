@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+<!--		<version>3.1.2</version>-->
+		<version>2.7.11</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.kona.tomcat</groupId>
+	<artifactId>demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>demo</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>17</java.version>
+		<kona.version>1.0.9</kona.version>
+		<lombok.version>1.18.26</lombok.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- kona-crypto -->
+		<dependency>
+			<groupId>com.tencent.kona</groupId>
+			<artifactId>kona-crypto</artifactId>
+			<version>${kona.version}</version>
+		</dependency>
+
+		<!-- kona-pkix -->
+		<dependency>
+			<groupId>com.tencent.kona</groupId>
+			<artifactId>kona-pkix</artifactId>
+			<version>${kona.version}</version>
+		</dependency>
+
+		<!-- kona-ssl -->
+		<dependency>
+			<groupId>com.tencent.kona</groupId>
+			<artifactId>kona-ssl</artifactId>
+			<version>${kona.version}</version>
+		</dependency>
+
+		<!-- kona-provider -->
+		<dependency>
+			<groupId>com.tencent.kona</groupId>
+			<artifactId>kona-provider</artifactId>
+			<version>${kona.version}</version>
+		</dependency>
+
+		<!--KONA 结束-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
